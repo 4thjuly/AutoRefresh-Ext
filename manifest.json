@@ -1,0 +1,19 @@
+{
+  "author": "Ian Ellison-Taylor",
+  "name": "Borderify",
+  "version": "1.0",
+
+  "description": "Adds a red border to all webpages matching mozilla.org.",
+
+  "icons": {
+    "48": "icons/border-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://developer.microsoft.com/*/microsoft-edge/*"],
+      "js": ["borderify.js"]
+    }
+  ]
+
+}
