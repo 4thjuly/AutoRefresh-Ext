@@ -1,18 +1,18 @@
 {
   "author": "Ian Ellison-Taylor",
-  "name": "Borderify",
+  "name": "AutoRefresh",
   "version": "1.0",
 
-  "description": "Adds a red border to all webpages matching mozilla.org.",
+  "description": "Auto refresh page every minute",
 
   "icons": {
-    "48": "icons/border-48.png"
+    "48": "icons/ic_loop_black_24dp_2x.png"
   },
 
   "content_scripts": [
     {
-      "matches": ["*://developer.microsoft.com/*/microsoft-edge/*"],
-      "js": ["borderify.js"]
+      "matches": ["<all_urls>"],
+      "js": ["refresh.js"]
     }
   ]
 
